@@ -3,6 +3,7 @@ import './History.scss'
 
 const History = () => {
   return (
+    <>
     <div className="history-bg">
         <div className="history">
             <div className="a">
@@ -18,13 +19,15 @@ const History = () => {
                 </button>
             </div>
         </div>
-        <div className="carousel">
-            <div>                
-                <span>What they say about us</span>
-                <span>What they say about us</span>
-            </div>
+    </div>
+    <div className="carousel">
+        <div>                
+            <span>What they say about us</span>
+            <span>What they say about us</span>
         </div>
     </div>
+
+    </>
 
   )
 }
