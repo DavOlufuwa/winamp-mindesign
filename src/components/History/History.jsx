@@ -19,7 +19,7 @@ const History = () => {
             </div>
         </div>
         <div className="carousel">
-            <div className="">                
+            <div>                
                 <span>What they say about us</span>
                 <span>What they say about us</span>
             </div>

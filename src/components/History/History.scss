@@ -10,7 +10,6 @@ $small-btn-padding: 18px 30px;
 $big-btn-padding: 16px 40px;
 
 .history-bg{
-    background-color: aqua;
     padding: 1rem 2rem;
     text-align: center;
 
@@ -48,21 +47,29 @@ $big-btn-padding: 16px 40px;
         }
     }
     .carousel{
-        background: linear-gradient(to left, #fc4d36, #778efd, #FC4C35, #758BFD);
-        background-clip: text;
-        -webkit-text-fill-color: #fff;
-        color: transparent;
-        -webkit-text-stroke: 4px transparent;
+        margin-top: 4rem;
+        
         div{
-            display: flex;
-            font-size: 3rem;
+            display: inline-flex;
+            font-size: calc(15vw + 5vh);;
             font-weight: 700;
             width: 100%;
             overflow: hidden;
+            white-space: nowrap;
+            padding-right: 100%;
 
             span{
-                display: inline;
-                animation: carousel 3s infinite linear;
+               background: linear-gradient(to left, #fc4d36, #778efd, #FC4C35, #758BFD);
+               background-clip: text;
+               -webkit-text-fill-color: #fff;
+               color: transparent;
+               -webkit-text-stroke: 5px transparent;
+                will-change: transform;
+                animation: carousel 12s linear infinite;
+                &:first-of-type{
+                    margin-right: 2rem;
+                }
+
             }
             @keyframes carousel {
                 0%{
