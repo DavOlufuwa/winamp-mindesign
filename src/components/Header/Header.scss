@@ -1,0 +1,228 @@
+$white: #FAFAFA;
+$radius:12px;
+$main-color:#E63103;
+$black:#111111;
+$grey: #CFC4C4;
+$light-grey: #5E5E5ECC;
+
+
+
+.header-bg{
+    background-image: url("../../assets/images/background-color-image.png");
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 7.5rem;
+    position: relative;
+
+
+    .navigation{
+        position: relative;
+        display: flex;
+        justify-content:space-between ;
+        align-items: center;
+        padding: 1.5rem 0;
+        
+
+        .logo{
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            height: 50px;
+            font-size: 2rem;
+            font-weight: 700;
+            text-transform: lowercase;
+            color: $white;
+
+            img{
+                display: block;
+                height: 100%;
+                width: 100%;
+            }
+            
+        }
+
+        .links{
+            ul{
+                list-style: none;
+                display: inline-flex;
+                align-items: center;
+            }
+            li{
+                margin: 0 1.2rem;
+                padding: .5rem 0 0 0;
+                font-size: 20px; 
+                font-weight: 500;
+                color: $white;
+                cursor: pointer;
+                transition: 0.3s all ease-in-out;
+
+                &:nth-of-type(4){
+                    
+                    img{
+                        height: 12px;
+                    }
+
+                    &:hover{
+                        img{
+                            background: transparent;
+                            color: #111111;
+                        }
+                    }
+                }
+                &:hover{
+                    color: $black;
+                }
+                
+            }
+        }
+
+        .buttons{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+
+            .btn{
+                padding: 18px 30px;
+                border: none;
+                border-radius: 12px;
+                font-size: 1rem;
+                font-weight: 600;
+                color: $white;
+                cursor: pointer;
+
+                &:first-of-type{
+                    background-color: $black;
+                    transition: 0.3s all ease;
+
+                    &:hover{
+                        background-color: $white;
+                        color: $main-color;
+                    }
+                }
+                &:last-of-type{
+                    position: relative;
+                    background-color: $light-grey;
+                    color: $grey;
+
+                    div{
+                        position: absolute;
+                        border-radius: 50%;
+                        background-color: $white;
+                        padding: 8px 6px;
+                        top: -15px;
+                        right: -15px;
+
+                        &::after{
+                            content: 'soon';
+                            font-size: 10px;
+                            font-weight: 600;
+                            color: $black;
+                        }
+                    }
+                }
+            }
+        }
+
+        .mobile-menu{
+            display: none;
+            background-color: $white;
+            border-radius: 50%;
+            padding:15px;
+            color: $main-color;
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (max-width:1250px) {
+    .header-bg{
+
+        .navigation{
+            
+            position: absolute;
+            left: 0;
+            width: 100%;
+            padding: 2rem 2.5rem;
+            transition: 2s all ease;
+            background: none;
+
+            &.show{
+                background-color: $white;
+                height: 100vh;
+            }
+            
+            
+            
+            .logo{
+                align-self: flex-start;
+                font-size: 1.5rem ;
+                
+                
+
+                &.show{                    
+                    color: $black;
+                }
+            }
+    
+            .links,
+            .buttons{
+                display: none;
+            }
+    
+            .links{
+                &.show{
+                    display: block;
+                    position: absolute;
+                    top: 10rem;
+
+                    ul{
+                        display: unset;
+                        li{
+                            color: $main-color;
+                            margin-top: 2.5rem;
+                            font-size: 1.5rem;
+
+                            &:hover{
+                                color: $black;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .buttons{
+                &.show{
+                    display: flex;
+                    position: absolute;
+                    text-align: center;
+                    left: 0;
+                    right: 0;
+                    bottom: 6rem;
+
+                    .btn{
+                        &:last-of-type{
+                            div{
+                                background-color: $main-color;
+                                &::after{
+                                    color: $white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+            .mobile-menu{
+                display: flex;
+                align-self: flex-start;
+            }
+            
+        }
+    }
+
+
+}
