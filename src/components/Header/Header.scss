@@ -15,7 +15,7 @@ $light-grey: #5E5E5ECC;
     background-size: cover;
     padding: 0 7.5rem;
     position: relative;
-
+    
 
     .navigation{
         position: relative;
@@ -135,6 +135,27 @@ $light-grey: #5E5E5ECC;
             cursor: pointer;
         }
     }
+    .hero{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        margin: 0;
+        top: 35%;
+        width: 100%;
+        color: $white;
+        
+        
+        h1{
+            width: 75%;
+            font-size: 4rem;
+            // margin-right: 9rem;
+        }
+        p{
+            font-size: 14px;
+            font-weight: 600;
+        }
+    }
 }
 
 @media screen and (max-width:1250px) {
@@ -146,24 +167,24 @@ $light-grey: #5E5E5ECC;
             left: 0;
             width: 100%;
             padding: 2rem 2.5rem;
-            transition: 2s all ease;
+            transition: 0.3s all ease-in-out;
             background: none;
+           
 
             &.show{
                 background-color: $white;
                 height: 100vh;
+                z-index: 1;
             }
-            
-            
-            
+                        
             .logo{
                 align-self: flex-start;
                 font-size: 1.5rem ;
-                
-                
+                transition: 0.2s;
 
                 &.show{                    
                     color: $black;
+
                 }
             }
     
@@ -203,6 +224,12 @@ $light-grey: #5E5E5ECC;
                     bottom: 6rem;
 
                     .btn{
+                        &:first-of-type{
+                            &:hover{
+                                border: 1px solid $main-color;
+                            }
+                    
+                        }
                         &:last-of-type{
                             div{
                                 background-color: $main-color;
@@ -221,6 +248,23 @@ $light-grey: #5E5E5ECC;
                 align-self: flex-start;
             }
             
+        }
+        .hero{
+            flex-direction: column;
+            text-align: center;
+            justify-content: start;
+            align-items: center;
+            gap: 1rem;
+            padding: unset;
+
+            h1{
+                width: unset;
+                font-size: 3rem;
+            }
+            p{
+                font-size: 1rem;
+                line-height: 1.7;
+            }
         }
     }
 

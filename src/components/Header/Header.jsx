@@ -9,8 +9,6 @@ import { faBars,faXmark } from '@fortawesome/free-solid-svg-icons'
 
 const Header = () => {
   const [menu, setMenu] = useState(true)
-  console.log(menu)
-
   return (
     <div className='header-bg'>
       <div className={menu ? 'navigation' : 'navigation show' }>
@@ -68,7 +66,15 @@ const Header = () => {
             }
         </div>
       </div>
-      
+      <div className="hero">
+          <h1>
+            Set the tone!
+          </h1>
+          <p>
+            A universal platform connecting listeners with their favourite artists, podcasts and
+            radio stations. Stay tuned, much more to come!
+          </p>
+      </div>
     </div>
   )
 }
