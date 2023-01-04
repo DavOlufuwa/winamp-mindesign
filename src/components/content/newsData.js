@@ -104,7 +104,7 @@ export const newsData = [
         date : 'September 13, 2022',
         title: 'MusicAlly', 
         subHeading : 
-            "Winamp outlines its plans for aggregation, artisits and NFTs",
+            "Winamp outlines its plans for aggregation, artists and NFTs",
         content : 
             "Media player Winamp's original heyday may be some time in the past, but it remains a going concern - 80 million people are using the software around the world still."      
     },

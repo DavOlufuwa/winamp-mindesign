@@ -6,7 +6,7 @@ import FanImage from '../../assets/images/fanzone_creatorpage.png'
 const Intros = () => {
   return (
     <div className="intros-bg">
-        <div className="section1">
+        <div className="section1" id='player'>
             {
                 subData.map((sub, index)=>(
                     <div key={index} className='box'>
@@ -30,7 +30,7 @@ const Intros = () => {
                 ))
             }
         </div>
-        <div className="section2">
+        <div className="section2" id='fanzone'>
             <div className="part1">
                 <div className="a">
                     <svg width="88" height="84" viewBox="0 0 88 84" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -18,22 +18,35 @@ const Header = () => {
         <div className={menu ? 'links' : 'links show' }>
           <ul>
             <li>
-              <Link>
+              <Link
+              to='player'
+              smooth={true}
+              >
                 Player
               </Link>
             </li>
             <li>
-              <Link>
+              <Link
+                to='fanzone'
+                smooth={true}
+
+              >
                 Fanzone
               </Link>
             </li>
             <li>
-              <Link>
+              <Link
+                to='player'
+                smooth={true}
+              >
                 Creators
               </Link>
             </li>
             <li>
-              <Link>
+              <Link
+                to='news'
+                smooth={true}
+              >
                 More <img src={Caret} alt="" />
               </Link>
             </li>

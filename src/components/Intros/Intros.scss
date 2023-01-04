@@ -150,10 +150,21 @@ $big-btn-padding: 16px 40px;
             
             .part1{
                 width: 60%;
+
+                .d{
+                    align-self: flex-start;
+                }
             }
             .part2{
                 width: 50%;
+                max-height: 30rem;
             }
         }
+    }
+}
+
+@media screen and (min-width:1200px){
+    .intros-bg{
+        padding: 0 7.5rem;
     }
 }

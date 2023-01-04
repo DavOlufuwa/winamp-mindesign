@@ -6,7 +6,7 @@ import rightArrow from '../../assets/icons/red-arrow-up.svg'
 const News = () => {
   return (
     <div className='news-bg'>
-        <div className="section1">
+        <div className="section1" id='news'>
             {
               newsData.map((news, index)=>(
                 <div key={index} className="box">

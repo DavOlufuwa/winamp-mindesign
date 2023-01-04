@@ -258,12 +258,13 @@ $light-grey: #5E5E5ECC;
             padding: unset;
 
             h1{
-                width: unset;
+                min-width: 15rem;
                 font-size: 3rem;
             }
             p{
                 font-size: 1rem;
                 line-height: 1.7;
+                min-width: 16rem;
             }
         }
     }

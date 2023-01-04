@@ -1,4 +1,5 @@
 import './App.scss'
+import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import History from './components/History/History';
 import Intros from './components/Intros/Intros';
@@ -14,6 +15,7 @@ function App() {
       <Intros/>
       <History/>
       <News/>
+      <Footer/>
     </div>
   );
 }

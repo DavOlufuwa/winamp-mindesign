@@ -55,7 +55,7 @@ $big-btn-padding: 16px 40px;
             }
             .e{
                 button{
-                    
+                    background: none;
                     display: inline-flex;
                     align-items: flex-end;
                     border: none;
@@ -72,13 +72,15 @@ $big-btn-padding: 16px 40px;
     }
     .section2{
         text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
         button{
             font-weight: 600;
             border: none;
             color: $white;
             border-radius: $radius;
             background-color: $main-color;
-            padding: $small-btn-padding;
+            padding: $big-btn-padding;
             transition: 0.3s all ease;
             cursor: pointer;
 
@@ -93,9 +95,32 @@ $big-btn-padding: 16px 40px;
 
 @media screen and (min-width:900px){
     .news-bg{
+
         .section1{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
+            transform: translateY(-4rem);
+        }
+    }
+}
+@media screen and (min-width:1200px){
+    .news-bg{
+        padding: 0 7.5rem;
+        .section1{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            transform: translateY(-5rem);
+            .box{
+                &:nth-of-type(2){
+                    transform: translateY(5rem);
+                }
+                &:nth-of-type(5){
+                    transform: translateY(5rem);
+                }
+            }
+        }
+        .section2{
+            margin-top: 4rem;
         }
     }
 }
