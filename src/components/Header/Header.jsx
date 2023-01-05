@@ -9,6 +9,10 @@ import { faBars,faXmark } from '@fortawesome/free-solid-svg-icons'
 
 const Header = () => {
   const [menu, setMenu] = useState(true)
+  
+  const bodyTag = document.getElementById('body')
+  bodyTag.style.overflow = menu ? "" : "hidden";
+
   return (
     <div className='header-bg'>
       <div className={menu ? 'navigation' : 'navigation show' }>
