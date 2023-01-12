@@ -33,7 +33,7 @@ const Footer = () => {
       </div>
       <div className="section3">
           <div className="a">
-            set the tone!
+            Set the tone!
           </div>
           <div className="b">
             <button className="btn">

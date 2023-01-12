@@ -68,6 +68,7 @@ $big-btn-padding: 16px 40px;
         padding: 1.5rem 1rem;
         display: flex;
         flex-direction: column;
+        gap: 2rem;
         border-radius: $radius;
         box-shadow: $big-box-shadow;
         position: relative;
@@ -156,8 +157,9 @@ $big-btn-padding: 16px 40px;
                 }
             }
             .part2{
+                padding-top: 4rem;
                 width: 50%;
-                max-height: 30rem;
+                
             }
         }
     }

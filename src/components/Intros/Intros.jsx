@@ -1,7 +1,7 @@
 import React from 'react'
 import './Intros.scss'
 import { subData } from '../content/subData'
-import FanImage from '../../assets/images/fanzone_creatorpage.png'
+import FanImage from '../../assets/images/fan-image.png'
 
 const Intros = () => {
   return (
